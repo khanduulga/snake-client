@@ -31,6 +31,19 @@ const handleUserInput = function (key) {
     case 'd':
       connection.write('Move: right');
       break;
+    case 'e':
+      connection.write('Say: hi');
+      break;
+    case 'q': 
+      connection.write('Say: getaway!');
+      break;
+    case 'r':
+      connection.write('Say: omg!');
+      break;
+    case 't':
+      connection.write('Say: catch me');
+      break;
+
   }
   // if (key === 'w') {
   //   conn.write('Move: up');
