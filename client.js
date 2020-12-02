@@ -12,9 +12,10 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log('->', data)
   })
-
+  //on connection to server return succesful connection string and send name to server
   conn.on('connect', () => {
     console.log("Successfully connected to game server!");
+    //name sent to server
     conn.write('Name: OMG');
   })
 
